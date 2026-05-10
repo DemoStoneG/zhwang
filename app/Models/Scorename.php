@@ -9,12 +9,11 @@ class Scorename extends Model
 {
     use HasFactory;
 
-    // 指定表名（如果表名不是复数形式）
+    protected $primaryKey = 'id';
+
     protected $table = 'scorename';
 
-    // 如果你的表没有 created_at 和 updated_at 字段
     public $timestamps = false;
 
-    // 允许批量赋值的字段
     protected $fillable = ['name', 'score'];
 }

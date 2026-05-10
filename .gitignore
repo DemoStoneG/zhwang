@@ -1,19 +1,62 @@
 /.phpunit.cache
 /node_modules
+
 /public/build
 /public/hot
 /public/storage
+
 /storage/*.key
 /vendor
+
+# 环境配置文件（敏感信息）
 .env
 .env.backup
 .env.production
+.env.local
+.env.*.local
+
+# PHPUnit
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
+/storage/logs/*
+
+# IDE 配置文件
 /.fleet
 /.idea
 /.vscode
+
+# Laravel 自定义
+/storage/app/public
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+bootstrap/cache
+
+# Composer
+composer.lock
+vendor/
+
+# npm
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Homestead
+Homestead.json
+Homestead.yaml
+auth.json
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
